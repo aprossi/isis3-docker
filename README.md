@@ -4,8 +4,6 @@ This is an attempt to make a working (for teaching/training purposes) installati
 
 The image is based on Ubuntu 12 but different distributions should be easy to achieve, as long as suppoted on [USGS ISIS3](https://isis.astrogeology.usgs.gov/documents/InstallGuide/index.html).
 
-This -> https://github.com/phusion/baseimage-docker 
-
 # build
 
 with the [Dockerfile](Dockerfile) available on current working directory:
@@ -20,7 +18,7 @@ in order. On host (anywhere, e.g. on docker shell):
 
 ## MacOSX
 
-Xquartz should be running with both ticks enabled in security tab (see references)
+Xquartz should be running with both ticks enabled on the security tab.  
 
 ```
 xhost +
