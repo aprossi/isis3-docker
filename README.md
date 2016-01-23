@@ -26,11 +26,20 @@ isis3ubuntu12:latest
 
 where ```XXX.XXX.XXX.XXX``` is the IP of the **host**
 
-e.g.
+e.g. on a mac laptop en0 = ethernet en1 = wi-fi (I guess):
+
+
+e.g. in bash (in the host docker shell):
+
+```
+IPHOST="$(ifconfig en1 | grep "inet " | cut -d ' ' -f 2)"
+```
+
 
 ```
 docker run --rm -i -t -u isis3user \
 -v ~/files-for-docker:/home/isisuser/shared-folder \
--e DISPLAY=10.0.1.2:0 \
-isis3ubuntu12:latest
+-e DISPLAY=$IPHOST:0 \
+isis3ubuntu12:latest /bin/bash
 ```
+
