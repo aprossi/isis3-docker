@@ -28,7 +28,7 @@ xhost +
 
 ```
 docker run --rm -i -t -u isis3user \
--v ~/files-for-docker:/home/isisuser/shared-folder \
+-v ~/files-for-docker:/home/isis3user/shared-folder \
 -e DISPLAY=XXX.XXX.XXX.XXX:0 \
 isis3ubuntu12:latest
 ```
@@ -47,7 +47,7 @@ IPHOST="$(ifconfig en1 | grep "inet " | cut -d ' ' -f 2)"
 
 ```
 docker run --rm -i -t -u isis3user \
--v ~/files-for-docker:/home/isisuser/shared-folder \
+-v ~/files-for-docker:/home/isis3user/shared-folder \
 -e DISPLAY=$IPHOST:0 \
 isis3ubuntu12:latest /bin/bash
 ```
