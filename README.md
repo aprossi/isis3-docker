@@ -14,6 +14,17 @@ with the [Dockerfile](Dockerfile) available on current working directory:
 docker build -t isis3ubuntu12:latest .
 ```
 
+# X11 forwarding
+
+in order. On host (anywhere, e.g. on docker shell):
+
+## MacOSX
+
+Xquartz should be running with both ticks enabled in security tab (see references)
+
+```
+xhost +
+```
 
 # Run
 
