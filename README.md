@@ -1,6 +1,6 @@
 # isis3-docker
 
-This is an attempt to make a working (for teaching/training purposes) installation of [USGS ISIS3](https://isis.astrogeology.usgs.gov) on docker, with a stripped-down set of data (full size of binaries, libraries and, mostly, data exceeds 100 GB!).
+This is an attempt to make a working (for teaching/training purposes) installation of [USGS ISIS3](https://isis.astrogeology.usgs.gov) on docker, with a stripped-down set of data (full size of binaries, libraries and, mostly, data exceeds 300 GB!).
 
 The image is based on Ubuntu 12 but different distributions should be easy to achieve, as long as suppoted on [USGS ISIS3](https://isis.astrogeology.usgs.gov/documents/InstallGuide/index.html).
 
